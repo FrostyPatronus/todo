@@ -6,18 +6,21 @@ sys.path.append("./functions")
 
 import add
 import makeFile
+import switch
 
 def main():
     args = sys.argv
 
     command = args[1]
-    data = args[2]
+    data = args[2 : ]
 
     date = str(d.date.today())
 
-    file = makeFile.createFile(date)
-    file.write(data)
+    print data
 
+    # file = makeFile.createFile(date)
+
+    switch.switch(command, data)
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,7 @@
 # --------------------------------
 # Makes the file
 # --------------------------------
+
 import sys
 
 import glob
@@ -11,10 +12,17 @@ sys.path.append("./helper")
 
 import constants as c
 
+# --------------------------------
+# Returns the file object
+# --------------------------------
+
 def create (curDate):
-    with open(c.DIR_TEMP + curDate, "a+") as f:
-        f.write("ADS<O<DA")
-    
+    return open(c.DIR_TEMP + curDate, "a+")    
+
+# --------------------------------
+# Creates file if not exists, deletes
+# old file if made in a different day
+# --------------------------------
 
 def createFile(curDate):
     pastDate = None

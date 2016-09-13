@@ -3,4 +3,4 @@
 # --------------------------------
 
 def add():
-    pass
+    print "Hello, world!"
