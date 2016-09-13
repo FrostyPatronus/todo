@@ -2,6 +2,11 @@
 import sys
 import datetime as d
 
+sys.path.append("./functions")
+
+import add
+import makeFile
+
 def main():
     args = sys.argv
 
@@ -9,8 +14,10 @@ def main():
     data = args[2]
 
     date = str(d.date.today())
-    
-    
-    
+
+    file = makeFile.createFile(date)
+    file.write(data)
+
+
 if __name__ == "__main__":
     main()
