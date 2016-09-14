@@ -30,8 +30,6 @@ def createFile(curDate):
         pastDate = filenames[0]
         break
 
-    print pastDate
-    print curDate
     if pastDate != curDate:
         remove(c.DIR_TEMP + pastDate)
     

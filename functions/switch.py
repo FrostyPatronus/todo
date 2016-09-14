@@ -2,14 +2,13 @@ import sys
 sys.path.append("./functions")
 import makeFile
 import interactive as i
+import add
 
 
 def switch(command, data):
-    print command
     return {
-        
-        "-i": i.interactive
-        "add": 
+    
+        "-i": i.interactive,
+        "add": add.add
 
-    }.get(command)(command, data)
-
+    }.get(command)(data)

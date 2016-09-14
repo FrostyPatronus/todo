@@ -1,10 +1,9 @@
 import switch 
-def interactive(command=None, data=None):
+def interactive(data=None):
     while True:
-        raw = input(">>> ")
-
-        raw = raw.split()
+        raw = raw_input(">>> ")
+        raw = raw.split(" ", 1)
         command = raw[0]
-        data = raw[1 : ]
+        data = raw[1]
 
-        switch.switch()
+        switch.switch(command, data)

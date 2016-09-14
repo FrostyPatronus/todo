@@ -16,7 +16,7 @@ def main():
 
     date = str(d.date.today())  
 
-    # file = makeFile.createFile(date)
+    makeFile.createFile(date)
 
     switch.switch(command, data)
 
