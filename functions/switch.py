@@ -8,7 +8,8 @@ def switch(command, data):
     print command
     return {
         
-        "-i": lambda: i.interactive()
+        "-i": i.interactive
+        "add": 
 
-    }.get(command)()
+    }.get(command)(command, data)
 

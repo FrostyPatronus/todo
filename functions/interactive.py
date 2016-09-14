@@ -1,5 +1,5 @@
 import switch 
-def interactive():
+def interactive(command=None, data=None):
     while True:
         raw = input(">>> ")
 

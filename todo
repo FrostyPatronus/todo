@@ -14,9 +14,7 @@ def main():
     command = args[1]
     data = args[2 : ]
 
-    date = str(d.date.today())
-
-    print data
+    date = str(d.date.today())  
 
     # file = makeFile.createFile(date)
 
