@@ -1,6 +1,10 @@
 # --------------------------------
 # Adds the todo in the file
 # --------------------------------
+import makeFile as m
 
-def add(line):
-    print "Hello, world!"
+def add(lines):
+    file = m.file
+
+    for line in lines:
+        file.write(line + "\n")

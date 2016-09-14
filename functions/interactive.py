@@ -1,4 +1,4 @@
-import switch 
+cdimport switch 
 def interactive(data=None):
     while True:
         raw = raw_input(">>> ")

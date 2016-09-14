@@ -3,6 +3,8 @@ import sys
 import datetime as d
 
 sys.path.append("./functions")
+sys.path.append("./helper")
+
 
 import add
 import makeFile

@@ -2,22 +2,21 @@
 # Makes the file
 # --------------------------------
 
-import sys
-
-import glob
 from os import walk
 from os import remove
 
-sys.path.append("./helper")
-
 import constants as c
+
+file = None
 
 # --------------------------------
 # Returns the file object
 # --------------------------------
 
 def create (curDate):
-    return open(c.DIR_TEMP + curDate, "a+")    
+    global file
+    file = open(c.DIR_TEMP + curDate, "a+")   
+    return  file
 
 # --------------------------------
 # Creates file if not exists, deletes
@@ -32,7 +31,5 @@ def createFile(curDate):
 
     if pastDate != curDate:
         remove(c.DIR_TEMP + pastDate)
-    
+
     return create(curDate)
-
-
