@@ -7,6 +7,7 @@ def switch(command, data):
     return {
 
         "-i": i.interactive,
-        "add": add.add
+        "add": add.add,
+        "quit": quit
 
     }.get(command)(data)

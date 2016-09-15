@@ -15,7 +15,7 @@ file = None
 
 def create (curDate):
     global file
-    file = open(c.DIR_TEMP + curDate, "a+")   
+    file = open(c.DIR_TEMP + curDate, "a+") 
     return  file
 
 # --------------------------------
